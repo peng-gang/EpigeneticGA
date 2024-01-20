@@ -83,8 +83,4 @@ for(i in 1:nSample){
 cor.test(GA.min, GA)
 cor.test(GA.1se, GA)
 
-
-cor.test(GA.min[GA >= 36], GA[GA >= 36])
-cor.test(GA.1se[GA >= 36], GA[GA >= 36])
-
 save(GA.min, GA.1se, file = "rlt/nestLOOCV_V2.RData")
